@@ -10,3 +10,9 @@ kubectl apply -f ../conf/heapster/
 kubectl apply -f ../conf/heapster/rbac
 
 kubectl apply -f ../conf/dashboard
+
+echo "==================================================================="
+echo "      安装常见问题见此链接评论区：http://sealyun.com/pro/products/"
+echo "      交流QQ群：98488045"
+echo "      官网：www.sealyun.com"
+echo "==================================================================="
