@@ -25,6 +25,8 @@ cgroupDriver=$(docker info|grep Cg)
 driver=${cgroupDriver##*: }
 echo "driver is ${driver}"
 
+mkdir -p /var/lib/kubelet/ || true
+
 cat <<EOF > /var/lib/kubelet/config.yaml
 address: 0.0.0.0
 apiVersion: kubelet.config.k8s.io/v1beta1
