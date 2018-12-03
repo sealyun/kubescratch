@@ -11,6 +11,8 @@ kubectl apply -f ../conf/heapster/rbac
 
 kubectl apply -f ../conf/dashboard
 
+kubectl apply -f ../conf/prometheus
+
 echo "==================================================================="
 echo "      安装常见问题见此链接评论区：http://sealyun.com/pro/products/"
 echo "      交流QQ群：98488045"
