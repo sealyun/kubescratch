@@ -1,3 +1,4 @@
+#!/bin/bash
 # Open ipvs
 modprobe -- ip_vs
 modprobe -- ip_vs_rr
@@ -11,6 +12,7 @@ net.bridge.bridge-nf-call-iptables = 1
 EOF
 sysctl --system
 sysctl -w net.ipv4.ip_forward=1
-systemctl stop firewalld && systemctl disable firewalld
+# systemctl stop firewalld && systemctl disable firewalld
 swapoff -a
 setenforce 0
+exit 0
